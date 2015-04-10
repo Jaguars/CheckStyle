@@ -1,6 +1,6 @@
-# Checkstyle file for ADP Credit
+# Checkstyle file for Jaguars.
 
-This is the checkstyle file to be used by Java development within ADP Credit.
+This is the checkstyle file to be used by Java development within Jaguars.
 
 ## Integrating within IntelliJ
 
@@ -9,8 +9,8 @@ This is the checkstyle file to be used by Java development within ADP Credit.
 3. Click "Settings"
 4. On the left click "CheckStyle" (if you don't see CheckStyle, you need to first install the CheckStyle plugin for IntelliJ)
 5. Add a new configuration file.
-    1. Type in a name for the description, e.g. "Sun Checks (ADP Version)".
-    2. Check "Use a CheckStyle file accessible via HTTP", and enter the URL: `http://stash.ds.adp.com/projects/CREDIT/repos/checkstyle/browse/sun_checks.xml?raw`
+    1. Type in a name for the description, e.g. "Sun Checks (Jaguars Version)".
+    2. Check "Use a CheckStyle file accessible via HTTP", and enter the URL: `https://raw.githubusercontent.com/Jaguars/CheckStyle/master/sun_checks.xml`
     3. Click "Next"
 6. Click "Finish"
 7. Make sure you check the new configuration file as "Active"
@@ -33,7 +33,7 @@ After that, all new projects for IntelliJ should use this new coding standard.  
 			<id>validate</id>
 			<phase>validate</phase>
 			<configuration>
-				<configLocation>http://stash.ds.adp.com/projects/CREDIT/repos/checkstyle/browse/sun_checks.xml?raw</configLocation>
+				<configLocation>https://raw.githubusercontent.com/Jaguars/CheckStyle/master/sun_checks.xml</configLocation>
 				<encoding>UTF-8</encoding>
 				<consoleOutput>true</consoleOutput>
 				<includeTestSourceDirectory>true</includeTestSourceDirectory>
